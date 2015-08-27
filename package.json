@@ -1,0 +1,26 @@
+{
+  "name": "gulp-tasks",
+  "version": "0.1.1",
+  "description": "Manage your gulp tasks easy!",
+  "author": "Disorder <disorrder@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/disorrder/gulp-tasks.git"
+  },
+  "scripts": {
+    "prepublish": "npm version patch && coffee --bare --compile --output ./release ./sources/*.coffee",
+    "publish": "git add -A . && git commit && git push --follow-tags"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.3"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "gulp": "^3.9.0",
+    "lodash": "^3.10.1"
+  },
+  "main": [
+    "release/gulp-tasks.js"
+  ],
+  "licence": "MIT"
+}
