@@ -57,5 +57,8 @@ All methods return `this`.
 
 ## TODO
 More features:
- [-] Sync tasks syntax
- [-] Run tasks with dependencies
+ - [ ] Sync tasks syntax
+ - [ ] Run tasks with dependencies
+
+## Author notes
+to publish with npm, run `npm run patch`
